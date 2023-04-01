@@ -13,7 +13,7 @@ public class ItemCreator {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, DesignPattern.MODID);
 
     public static final RegistryObject<Item> SWORD_OF_JUSTICE = ITEMS.register("sword_of_justice",
-            () -> new Item(new Item.Properties().tab(CreativeModCustomItems.TAB_HOLY_ITEMS)));
+            () -> new SwordItem(Tiers.NETHERITE, 10, 10 ,new Item.Properties().tab(CreativeModCustomItems.TAB_HOLY_ITEMS)));
     public static final RegistryObject<Item> RED_DIAMOND = ITEMS.register("red_diamond",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
