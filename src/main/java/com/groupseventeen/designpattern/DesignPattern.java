@@ -1,6 +1,6 @@
 package com.groupseventeen.designpattern;
 
-import com.groupseventeen.designpattern.Items.Sword;
+import com.groupseventeen.designpattern.Items.ItemCreator;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -24,7 +24,7 @@ public class DesignPattern
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        Sword.register(modEventBus);
+        ItemCreator.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
